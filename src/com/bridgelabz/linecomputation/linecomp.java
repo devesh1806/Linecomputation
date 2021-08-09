@@ -16,7 +16,7 @@ public class linecomp {
 		
 		
 		//For Line 2
-		int x3=  5;  //x co-ordinate of left end point of line.
+		int x3=  6;  //x co-ordinate of left end point of line.
 		int y3 = 6; //y co-ordinate of left end point of line.
 		int x4 = 1; //x co-ordinate of right end point of line
 		int y4 = 1; //y co-ordinate of right end point of line
@@ -26,10 +26,13 @@ public class linecomp {
 
 		System.out.println("The length of line having points (" + x3 + "," + y3 +") and (" + x4 +"," + y4 +") is " + String.format("%.2f",length1) +".");
 
+		Double l = new Double(length);
+		Double l1 = new Double(length1);
 		
 		//Checking if length of two lines are equal using equals method.
-		if ((String.valueOf(length)).equals((String.valueOf(length)))) System.out.println("Length of both lines are equal.");
-		else System.out.println("Length of both lines are not equal.");
+		if (l.compareTo(l1) == 0) System.out.println("Length of both lines are equal.");
+		if (l.compareTo(l1) < 0) System.out.println("Length of Line 1 is less than length of Line 2.");
+		else System.out.println("Length of Line 1 is greater than length of Line 2.");
 		
 	}
 }
