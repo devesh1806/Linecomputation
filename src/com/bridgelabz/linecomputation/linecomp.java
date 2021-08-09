@@ -26,13 +26,15 @@ public class linecomp {
 
 		System.out.println("The length of line having points (" + x3 + "," + y3 +") and (" + x4 +"," + y4 +") is " + String.format("%.2f",length1) +".");
 		
+		
 		//Double object created as compareTo method using object as parameter.
 		Double l = new Double(length);
 		Double l1 = new Double(length1);
 		
+		
 		//Checking if length of two lines are equal,greater or less than using compareTo method.
 		if (l.compareTo(l1) == 0) System.out.println("Length of both lines are equal.");
-		if (l.compareTo(l1) < 0) System.out.println("Length of Line 1 is less than length of Line 2.");
+		else if (l.compareTo(l1) < 0) System.out.println("Length of Line 1 is less than length of Line 2.");
 		else System.out.println("Length of Line 1 is greater than length of Line 2.");
 		
 	}
